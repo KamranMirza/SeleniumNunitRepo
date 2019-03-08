@@ -14,6 +14,7 @@ namespace SeleniumNunit
     public class TestClass:Hooks
     {
         [Test]
+        [Category("One")]
         public void GoogleTest()
         {
             Driver.Navigate().GoToUrl("http://www.google.com");
@@ -24,6 +25,7 @@ namespace SeleniumNunit
         }
 
         [Test]
+        [Category("Two")]
         public void ExecuteAutomationTest()
         {
             Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
